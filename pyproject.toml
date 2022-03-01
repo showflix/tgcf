@@ -10,35 +10,35 @@ documentation = "https://github.com/aahnik/tgcf/wiki"
 
 [tool.poetry.dependencies]
 python = "^3.10.2"
-requests = "^2.27.1"
+requests = "^2.25.1"
 typer = "^0.3.2"
-python-dotenv = "^0.19.2"
-PyYAML = "^6.0"
-pydantic = "^1.9.0"
-Telethon = "1.24.0"
-cryptg = "^0.2.post4"
-Pillow = "^9.0.1"
+python-dotenv = "^0.17.0"
+PyYAML = "^5.4.1"
+pydantic = "^1.8.1"
+Telethon = "1.21.1"
+cryptg = "^0.2.post2"
+Pillow = "^8.1.2"
 hachoir = "^3.1.2"
-aiohttp = "^3.8.1"
+aiohttp = "^3.7.4"
 tg-login = "^0.0.2"
 "watermark.py" = "^0.0.3"
-pytesseract = "^0.3.9"
-rich = "^11.2.0"
+pytesseract = "^0.3.7"
+rich = "^10.3.0"
 pyfiglet = "^0.8.post1"
 verlat = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
-typer-cli = "^0.0.12"
-black = {version = "^22.1.0", allow-prereleases = true}
-isort = "^5.10.1"
-pre-commit = "^2.17.0"
+typer-cli = "^0.0.11"
+black = {version = "^20.8b1", allow-prereleases = true}
+isort = "^5.8.0"
+pre-commit = "^2.13.0"
 
 
 [tool.poetry.scripts]
 tgcf = 'tgcf.cli:app'
 
 [build-system]
-requires = ["poetry-core>=1.0.8"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 
