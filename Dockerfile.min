@@ -6,7 +6,8 @@ ENV VENV_PATH="/venv"
 ENV PATH="$VENV_PATH/bin:$PATH"
 RUN apk add --no-cache libffi libpq ffmpeg tesseract-ocr
 WORKDIR /app
-
+RUN python -m pip install --upgrade pip
+RUN python -m pip install --upgrade telethon
 
 FROM base as builder
 ENV PIP_DEFAULT_TIMEOUT=100 \
